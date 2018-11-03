@@ -8,6 +8,8 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  
 }
 
 /* general */
@@ -127,20 +129,32 @@ h3, h2 {
 .main-section {
   float: left;
   width: 100%;
-  max-width: 960px;
+  max-width: 650px;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
+  text-align: justify;
 }
 
 /* portfolio page */
 
+.portfolio-section {
+  float: left;
+  width: 100%;
+  width: 960px;
+  padding: 30px;
+  margin: 0 0 30px;
+  background: #fff;
+  background-position-x: center;
+  border: 1px solid #ddd;
+  text-align: justify;
+}
 .work {
   position: relative;
   float: left;
-  width: 274px;
-  margin: 20px 0 25px;
+  width: 250px;
+  margin: 20px 20px 20px 20px;
   overflow: auto;
 }
 
@@ -155,7 +169,8 @@ h3, h2 {
 }
 
 .work h3 {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   bottom: 20px;
   width: 100%;
   padding: 15px;
@@ -165,6 +180,7 @@ h3, h2 {
   color: #fff;
   text-align: center;
   background: #4aaaa5;
+  background-position-x: center;
   border-bottom: 0;
 }
 
@@ -174,9 +190,48 @@ h3, h2 {
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
+  position: relative;
 }
 
 /* contact page */
+/* 
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+} */
 
 #contact-form ul {
   margin-bottom: 20px;
@@ -214,6 +269,42 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/* sidebar */
+
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 980px) {

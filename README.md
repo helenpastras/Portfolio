@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-Responsive Portfolio
+# Portfolio
+Responsive Portfolio built with Bootstrap
